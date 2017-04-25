@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="buyIt" onsubmit="return false">
+        <div id="hello">
+            <h2>Hello client, enter your name</h2> Name:
+            <input type="text" id="name">
+            <button onclick="processPhase1()">Continue</button>
+        </div>
+        <div id="formfactor" style="display: none; ">
+            <h2>What formfactor you would like to buy?</h2>
+            <input type="radio" name="formfactor" checked="checked" value="PC" /> PC
+            <br>
+            <input type="radio" name="formfactor" value="Laptop" /> Laptop
+            <br>
+                <button onclick="processPhase2()">Continue</button>
+        </div>
+        <div id="pc" style="display: none;">
+            <select name="pc" id="pc">
+                <option value="ASUS">ASUS</option>
+                <option value="Dell">Dell</option>
+                <option value="Microsoft">Microsoft</option> 
+            </select> <br>
+                <input type="radio" name="inch" checked="checked" value="12" /> 12
+                <br>
+                <input type="radio" name="inch" value="15" /> 15
+                <br>
+                 <input type="radio" name="inch" value="17" /> 17
+                <br>
+                <button onclick="processPhase3()">Continue</button>
+        </div>
+        <div id="laptop" style="display: none;">
+            <select name="laptop" id="laptop">
+                <option value="Aple">Apple</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Acer">Acer</option> 
+            </select> <br>
+                <input type="radio" name="inch" checked="checked" value="12" /> 12
+                <br>
+                <input type="radio" name="inch" value="15" /> 15
+                <br>
+                 <input type="radio" name="inch" value="17" /> 17
+                <br>
+                <button onclick="processPhase3()">Continue</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
